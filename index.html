@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8" />
+          <meta
+               name="viewport"
+               content="width=device-width, initial-scale=1.0"
+          />
+          <title>WUPM</title>
+
+          <!-- Font Awesome -->
+          <link
+               rel="stylesheet"
+               href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+               integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+               crossorigin="anonymous"
+               referrerpolicy="no-referrer"
+          />
+
+          <!-- AOS -->
+          <link
+               href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+               rel="stylesheet"
+          />
+
+          <!-- Eksternal CSS -->
+          <link rel="stylesheet" href="css/style.css" />
+     </head>
+     <body>
+          <!-- Navbar -->
+          <nav>
+               <input type="checkbox" id="check" />
+               <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+               </label>
+               <label class="logo">WUPM</label>
+               <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#service">Services</a></li>
+                    <li><a href="#galery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+               </ul>
+          </nav>
+
+          <!-- Landing/Home -->
+          <section class="home" id="home">
+               <div class="content" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="grid-container">
+                         <div class="text">
+                              <p>
+                                   WUPM merupakan sebuah industri rumahan yang
+                                   siap membantu Anda mewujudkan impian memiliki
+                                   barang cetakan berkualitas dari bahan dasar
+                                   plastik.
+                              </p>
+                              <button onclick="scrollToContact()">
+                                   Pesan Sekarang
+                              </button>
+                         </div>
+                         <div class="image">
+                              <img
+                                   src="img/simone-hutsch-fEwUlxVTnfw-unsplash.jpg"
+                                   alt="Deskripsi Gambar"
+                              />
+                         </div>
+                    </div>
+               </div>
+          </section>
+
+          <section class="about" id="about">
+               <div class="content" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="img">
+                         <img src="img/4.jpg" alt="" />
+                    </div>
+                    <div class="text satu">
+                         <p>
+                              Selamat datang di WUPM, home industri yang telah
+                              mengukir jejak dalam dunia pembuatan barang
+                              cetakan sejak tahun 2021. Sebagai pelopor dalam
+                              industri ini, kami memadukan keahlian dan dedikasi
+                              untuk menciptakan produk cetakan berkualitas
+                              tinggi. Dengan fokus pada inovasi dan kepuasan
+                              pelanggan.
+                         </p>
+                    </div>
+                    <div class="text">
+                         <p>
+                              Sejak awal berdiri WUPM,kami berkomitmen untuk
+                              memberikan pengalaman yang memuaskan dan
+                              melanjutkan dedikasi kami dalam menciptakan produk
+                              berkualitas tinggi yang memberikan dampak positif.
+                              Terima kasih telah memilih WUPM sebagai mitra
+                              cetakan Anda.
+                         </p>
+                    </div>
+                    <div class="img">
+                         <img src="img/2.jpg" alt="" />
+                    </div>
+               </div>
+          </section>
+
+          <section class="service" id="service">
+               <div class="content" data-aos="fade-up" data-aos-duration="1000">
+                    <h1>Service</h1>
+                    <div class="grid-container">
+                         <div class="card">
+                              <div class="icon">
+                                   <i class="fa-solid fa-headset"></i>
+                              </div>
+                              <h3 class="title">Pelayanan Terbaik</h3>
+                         </div>
+
+                         <div class="card">
+                              <div class="icon">
+                                   <i class="fa-solid fa-sack-dollar"></i>
+                              </div>
+                              <h3 class="title">Harga Terjangkau</h3>
+                         </div>
+
+                         <div class="card">
+                              <div class="icon">
+                                   <i class="fa-regular fa-clock"></i>
+                              </div>
+                              <h3 class="title">Pengerjaan Cepat</h3>
+                         </div>
+                    </div>
+               </div>
+          </section>
+
+          <section class="galery" id="galery">
+               <div class="content" data-aos="fade-up" data-aos-duration="1000">
+                    <h1>Product Gallery</h1>
+
+                    <div class="product-gallery">
+                         <div class="product-card">
+                              <img src="img/product1.jpg" alt="Product 1" />
+                              <h4>Product 1 Pot Tanaman</h4>
+                         </div>
+
+                         <div class="product-card">
+                              <img src="img/matias-luge-Ez95MIlhS3g-unsplash (1).jpg" alt="Product 2" />
+                              <h4>Product 2 OTP</h4>
+                         </div>
+
+                         <div class="product-card">
+                              <img src="img/matias-luge-NHIOGtAYj_o-unsplash.jpg" alt="Product 3" />
+                              <h4>Product 3 Kancing </h4>
+                         </div>
+
+                         <div class="product-card">
+                              <img src="img/42.jpg" alt="Product 3" />
+                              <h4>Product 4 Cover Wifi</h4>
+                         </div>
+                    </div>
+               </div>
+          </section>
+
+          <section class="contact" id="contact">
+               <div class="content" data-aos="fade-up" data-aos-duration="1000">
+                    <h1>Contact Us</h1>
+
+                    <form
+                         action="#"
+                         method="post"
+                         onsubmit="send(); return false;"
+                    >
+                         <label for="name">Name</label>
+                         <input type="text" id="name" name="name" required />
+
+                         <label for="message">Message</label>
+                         <textarea
+                              id="message"
+                              name="message"
+                              rows="4"
+                              required
+                         ></textarea>
+
+                         <button type="submit">Send Message</button>
+                    </form>
+               </div>
+          </section>
+
+          <footer>
+               <section class="copyright">
+                    © 2023 WUPM. All Rights Reserved.
+               </section>
+          </footer>
+
+          <!-- AOS -->
+          <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+          <script>
+               AOS.init();
+          </script>
+          <script src="js/script.js"></script>
+     </body>
+</html>
