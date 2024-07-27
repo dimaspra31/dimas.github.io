@@ -1,0 +1,509 @@
+/* Google Font Import */
+@import url("https://fonts.googleapis.com/css2?family=Gantari:wght@400;500;600&family=Poppins:wght@200;300;400;500;700&display=swap");
+
+/* Reset CSS */
+* {
+     padding: 0;
+     margin: 0;
+     text-decoration: none;
+     list-style: none;
+     box-sizing: border-box;
+}
+
+body {
+     font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label {
+     font-family: "Gantari", sans-serif;
+}
+
+body::-webkit-scrollbar {
+     display: none;
+}
+
+html {
+     scroll-behavior: smooth;
+}
+/* Navbar */
+nav {
+     background-color: #546e7a;
+     height: 80px;
+     width: 100%;
+     box-shadow: 0 4px 8px rgba(84, 63, 63, 0.3);
+     position: fixed;
+     top: 0;
+     z-index: 1;
+}
+
+label.logo {
+     color: #fff;
+     font-size: 35px;
+     line-height: 80px;
+     padding: 0 50px;
+     font-weight: bold;
+}
+
+nav ul {
+     float: right;
+     margin-right: 20px;
+}
+
+nav ul li {
+     display: inline-block;
+     line-height: 80px;
+     margin: 0 5px;
+}
+
+nav ul li a {
+     color: #fff;
+     font-size: 16px;
+     padding: 7px 13px;
+     border-radius: 3px;
+     text-transform: uppercase;
+}
+
+a:hover {
+     background: #95a5a6;
+     transition: 0.5s;
+}
+
+.checkbtn {
+     font-size: 30px;
+     color: white;
+     float: right;
+     line-height: 80px;
+     margin-right: 40px;
+     cursor: pointer;
+     display: none;
+}
+
+#check {
+     display: none;
+}
+
+.home {
+     background-color: #546e7a;
+     height: calc(100vh - 80px);
+     display: flex;
+     margin-top: 80px; /* Sesuaikan dengan tinggi navbar */
+     justify-content: center;
+     align-items: center;
+     position: relative;
+}
+
+.home .content {
+     padding: 0.13rem 1.875rem;
+     max-width: 90rem;
+}
+
+.grid-container {
+     display: grid;
+     grid-template-columns: 2fr 1fr;
+     gap: 50px;
+     align-items: center;
+     align-content: end;
+}
+
+.grid-container .text {
+     order: 1;
+}
+
+.home .content .grid-container .text {
+     font-size: 1.2rem;
+     margin-top: 2px;
+     line-height: 1.4;
+     font-weight: 300;
+     color: white;
+}
+
+.home .content .grid-container button {
+     margin-top: 1.5rem;
+     font-weight: 600;
+     padding: 16px 20px;
+     border: 0px;
+     border-radius: 4px;
+     background-color: #95a5a6;
+     cursor: pointer;
+     color: #fff;
+}
+
+.home .content .grid-container button:hover {
+     background-color: #fff;
+     color: #95a5a6;
+}
+
+.grid-container .image {
+     width: 500px;
+     height: 500px;
+     order: 2;
+}
+
+.grid-container .image img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     border-radius: 4px;
+}
+
+.about {
+     background-color: #95a5a6;
+     color: #ecf0f1;
+     height: 120vh;
+}
+
+.about .content {
+     display: grid;
+     grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.about .content .img {
+     width: 100%;
+     height: calc(120vh - 60vh);
+}
+
+.about .content img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+}
+
+.about .content .text {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     padding: 2.5rem;
+}
+
+.about .content .text p {
+     text-align: center;
+}
+
+.service {
+     background-color: #546e7a;
+     color: #ecf0f1;
+     height: fit-content;
+}
+
+.service .content {
+     padding: 3rem 7rem;
+}
+
+.service .content h1 {
+     text-align: center;
+     font-size: 2.3rem;
+     font-weight: bold;
+     margin-bottom: 20px;
+}
+
+.service .content .grid-container {
+     display: grid;
+     gap: 30px;
+     grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.service .content .grid-container .card {
+     background-color: #fff;
+     border-radius: 8px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     padding: 20px;
+     text-align: center;
+     height: 300px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+
+.service .content .grid-container .card .icon {
+     font-size: 40px;
+     color: #3498db;
+     margin-bottom: 15px;
+}
+
+.service .content .grid-container .card .title {
+     color: #333;
+     font-size: 18px;
+     margin: 0;
+}
+
+.galery {
+     background-color: #95a5a6;
+     color: #ecf0f1;
+     height: fit-content;
+}
+
+.galery .content {
+     padding: 3rem 7rem;
+}
+
+.galery .content h1 {
+     text-align: center;
+     font-size: 2.3rem;
+     font-weight: bold;
+     margin-bottom: 20px;
+}
+
+.galery .content .product-gallery {
+     display: flex;
+     justify-content: center;
+     gap: 20px;
+     flex-wrap: wrap;
+     flex-direction: row;
+}
+
+.galery .content .product-card {
+     background-color: #fff;
+     border-radius: 8px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     padding: 20px;
+     text-align: center;
+     width: 300px;
+}
+
+.galery .content .product-card img {
+     width: 100%;
+     border-radius: 8px;
+     margin-bottom: 10px;
+}
+
+.galery .content .product-card h4 {
+     color: #333;
+     font-size: 18px;
+     margin: 10px 0;
+}
+
+.contact {
+     background-color: #546e7a;
+     color: #ecf0f1;
+     height: fit-content;
+}
+
+.contact .content {
+     padding: 5rem 30rem;
+}
+
+.contact .content h1 {
+     font-size: 2.5rem;
+     margin-bottom: 10px;
+     text-align: center;
+}
+
+.contact .content p {
+     font-size: 1.2rem;
+     margin-bottom: 30px;
+}
+
+.contact .content form {
+     display: flex;
+     flex-direction: column;
+}
+
+.contact .content form label {
+     font-size: 1.2rem;
+     margin-bottom: 5px;
+}
+
+.contact .content form input,
+.contact .content form textarea {
+     width: 100%;
+     padding: 10px;
+     margin-bottom: 15px;
+     border: 1px solid #ccc;
+     border-radius: 5px;
+     box-sizing: border-box;
+}
+
+.contact .content form button {
+     background-color: #2ecc71;
+     color: #fff;
+     padding: 10px 20px;
+     font-size: 1.2rem;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+}
+
+.contact .content form button:hover {
+     background-color: #27ae60;
+}
+
+footer {
+     position: relative;
+     width: 100%;
+     height: auto;
+     padding: 0 100px;
+     color: #ecf0f1;
+     background-color: #95a5a6;
+}
+
+footer .copyright {
+     text-align: center;
+     padding: 1.5rem;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+     label.logo {
+          font-size: 30px;
+          padding-left: 50px;
+     }
+     nav ul li a {
+          font-size: 16px;
+     }
+
+     .grid-container .image {
+          width: 300px;
+          height: 300px;
+          order: 2;
+     }
+
+     .grid-container .image img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+     }
+
+     .about {
+          height: max-content;
+     }
+
+     .about .content .img {
+          width: 100%;
+          height: calc(100vh - 70vh);
+     }
+
+     .service .content {
+          padding: 3rem 2rem;
+     }
+
+     .service .content .grid-container .card {
+          height: 200px;
+     }
+
+     .galery .content {
+          padding: 3rem 2rem;
+     }
+
+     .galery .content .product-card {
+          width: 200px;
+     }
+
+     .contact .content {
+          padding: 5rem 2rem;
+     }
+
+     footer {
+          padding: 0 2rem;
+     }
+}
+
+@media screen and (max-width: 640px) {
+     .checkbtn {
+          display: block;
+     }
+     ul {
+          position: fixed;
+          width: 100%;
+          height: 100vh;
+          background-color: #546e7a;
+          top: 80px;
+          left: -100%;
+          text-align: center;
+          transition: all 0.5s;
+     }
+     nav ul li {
+          display: block;
+          margin: 50px 0;
+          line-height: 30px;
+     }
+     nav ul li a {
+          font-size: 20px;
+     }
+     a:hover {
+          background: none;
+          color: #95a5a6;
+     }
+     #check:checked ~ ul {
+          left: 0;
+     }
+
+     .grid-container {
+          grid-template-columns: 1fr;
+          gap: 30px;
+     }
+
+     .grid-container .text {
+          order: 2;
+     }
+
+     .grid-container .image {
+          width: 100%;
+          height: 400px;
+          order: 1;
+     }
+
+     .grid-container .image img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+     }
+
+     .home .content .grid-container button {
+          margin-top: 1rem;
+     }
+
+     .about {
+          height: max-content;
+     }
+
+     .about .content {
+          display: grid;
+          grid-template-columns: repeat(1, minmax(0, 1fr));
+     }
+
+     .about .content .img {
+          width: 100%;
+          height: calc(100vh - 70vh);
+     }
+
+     .about .content .text.satu {
+          order: 3;
+     }
+
+     .service .content {
+          padding: 3rem 1.875rem;
+     }
+
+     .service .content .grid-container {
+          display: grid;
+          gap: 20px;
+          grid-template-columns: repeat(1, minmax(0, 1fr));
+     }
+
+     .galery .content {
+          padding: 3rem 1.875rem;
+     }
+
+     .galery .content .product-gallery {
+          flex-direction: column;
+     }
+
+     .galery .content .product-card {
+          width: 100%;
+     }
+
+     .contact .content {
+          padding: 5rem 1.875rem;
+     }
+
+     footer {
+          padding: 0 1.875rem;
+     }
+}
